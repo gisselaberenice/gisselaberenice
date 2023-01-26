@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GastroLab UPEC</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   
+</head>
+<body>
+    <header class="site-header">        
+        <div class="contenedor contenido-header">
+            <div class="barra">
+
+                <a href="index.html" class="logo_inicio">
+                    <img src="img/logo1.jpg" alt="Logotipo de Bienes Raices">
+                </a>
+
+
+                <nav class="navegacion">
+                    <a href="nosotros.html">Inicio</a>
+                    <a href="shop.html">Tienda</a>
+                    <a href="blog.html">Menu</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+                
+            </div>
+
+        </div>     
+    </header>
+
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Tienda</h2>
+
+        <div class="container">
+            <div class="row">
+                    <!-- Elementos generados a partir del JSON -->
+                    <main id="items" class="col-sm-8 row"></main>
+                    <!-- Carrito -->
+                    <aside class="col-sm-4">
+                        <h2>Cart</h2>
+                        <!-- Elementos del carrito -->
+                        <ul id="carrito" class="list-group"></ul>
+                        <hr>
+                        <!-- Precio total -->
+                        <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                        <button id="boton-vaciar" class="btn btn-danger">Quitar del carrito</button>
+                        <a href="#" class="btn-compra">Comprar ahora</a>
+        
+                    </aside>
+            </div>
+        </div>
+        
+        
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Inicio</a>
+                <a href="shop.html">Tienda</a>
+                <a href="blog.html">Menu</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+                <p class="copyright">Todos los derechos reservados&copy;</p>                                            
+        </div>
+    </footer>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
